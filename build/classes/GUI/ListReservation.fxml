@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" fx:id="tableres" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.ListReservationController">
+   <children>
+      <JFXButton fx:id="annuler" layoutX="622.0" layoutY="559.0" onAction="#remove" prefHeight="40.0" prefWidth="72.0" style="-fx-background-color: #80BFFF;" text="Annuler" />
+      <TableView fx:id="tableress" layoutY="69.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="483.0" prefWidth="1280.0">
+        <columns>
+          <TableColumn fx:id="idreservation" prefWidth="40.0" text="id" />
+          <TableColumn fx:id="chauffeur" prefWidth="143.0" text="Chauffeur" />
+            <TableColumn fx:id="pass1" prefWidth="163.0" text="1er Passager" />
+            <TableColumn fx:id="pass2" prefWidth="184.0" text="2eme Passager" />
+            <TableColumn fx:id="pass3" prefWidth="233.0" text="3eme Passager" />
+            <TableColumn fx:id="pass4" prefWidth="221.0" text="4eme Passager" />
+            <TableColumn fx:id="date" prefWidth="295.0" text="Date Réservation" />
+        </columns>
+      </TableView>
+      <Label fx:id="lab" layoutX="420.0" layoutY="329.0" prefHeight="17.0" prefWidth="21.0" />
+      <TextField fx:id="search" layoutX="95.0" layoutY="14.0" prefHeight="25.0" prefWidth="134.0" promptText="taper nom chauffeur" />
+      <Label layoutX="10.0" layoutY="18.0" prefHeight="17.0" prefWidth="72.0" text="Rechercher:" />
+      <JFXButton layoutX="252.0" layoutY="14.0" onAction="#res" text="Statistiques" />
+      
+   </children>
+</AnchorPane>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXSlider?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.lynden.gmapsfx.GoogleMapView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" cacheShape="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.AjouterAnnoncesController">
+    
+    
+    <children>
+      <GoogleMapView fx:id="mapView" layoutX="153.0" layoutY="288.0" prefHeight="607.0" prefWidth="1614.0" AnchorPane.bottomAnchor="185.0" AnchorPane.leftAnchor="153.0" AnchorPane.rightAnchor="153.0" AnchorPane.topAnchor="288.0">
+         <effect>
+            <DropShadow blurType="GAUSSIAN" />
+         </effect></GoogleMapView>
+      <JFXTextField fx:id="fromTextField" labelFloat="true" layoutX="168.0" layoutY="61.0" prefHeight="29.0" prefWidth="254.0" promptText="ville départ">
+         <tooltip>
+            <Tooltip text="from where you will start&#10;exemple : Restaurant Tijani Ezzont, P1, Grombalia, Nabeul" textAlignment="CENTER" />
+         </tooltip></JFXTextField>
+      <JFXTextField fx:id="toTextField" labelFloat="true" layoutX="168.0" layoutY="177.0" onMouseExited="#toTextFieldAction" prefHeight="29.0" prefWidth="254.0" promptText="ville arrivée">
+         <tooltip>
+            <Tooltip text="where you are going &#10;example : Esprit Incubator, tunis" textAlignment="CENTER" />
+         </tooltip></JFXTextField>
+      <JFXDatePicker fx:id="dateAnnoncePicker" defaultColor="GOLD" layoutX="618.0" layoutY="61.0" promptText="date départ" showWeekNumbers="true" />
+      <JFXDatePicker fx:id="timeAnnoncePicker" defaultColor="GOLD" layoutX="618.0" layoutY="178.0" promptText="Heure départ" showTime="true" />
+      <JFXSlider fx:id="numberSlider" layoutX="908.0" layoutY="71.0" majorTickUnit="1.0" max="4.0" min="1.0" minorTickCount="0" prefHeight="45.0" prefWidth="254.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="922.0" layoutY="41.0" prefHeight="21.0" prefWidth="220.0" text="Nombre de places" />
+      <JFXSlider fx:id="prixSlider" layoutX="905.0" layoutY="187.0" minorTickCount="1" prefHeight="45.0" prefWidth="254.0" showTickLabels="true" showTickMarks="true" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="919.0" layoutY="152.0" prefHeight="21.0" prefWidth="220.0" text="Prix/Personne" />
+      <JFXButton fx:id="submitAnnonceButton" buttonType="RAISED" layoutX="859.0" layoutY="910.0" onAction="#submitAnnonceButtonAction" prefHeight="45.0" prefWidth="135.0" ripplerFill="WHITE" style="-fx-background-color: #2196f3;" text="Ajouter annonce" textFill="WHITE">
+         <effect>
+            <DropShadow blurType="GAUSSIAN" />
+         </effect>
+      </JFXButton>
+      
+      <Label layoutX="1418.0" layoutY="45.0" text="Déviation" />
+      <Label layoutX="1408.0" layoutY="124.0" text="Commentaire" />
+      <JFXTextArea layoutX="1284.0" layoutY="161.0" prefHeight="96.0" prefWidth="328.0" />
+      
+      <JFXComboBox layoutX="1288.0" layoutY="77.0" prefHeight="25.0" prefWidth="323.0" />
+      
+    </children>
+    
+</AnchorPane>

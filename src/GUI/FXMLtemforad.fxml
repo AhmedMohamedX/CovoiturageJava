@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="265.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.FXMLtemoignagesforadController">
+   <children>
+      <Label fx:id="idtem" layoutX="389.0" layoutY="202.0" prefHeight="17.0" prefWidth="47.0" visible="false" />
+      <JFXButton layoutX="445.0" layoutY="106.0" onAction="#supprimer" prefHeight="35.0" prefWidth="128.0" text="supprimer" />
+      <TableView fx:id="tableview" layoutX="14.0" layoutY="18.0" prefHeight="200.0" prefWidth="354.0">
+         <columns>
+            <TableColumn fx:id="messagecolumn" prefWidth="200.0" text="message" />
+            <TableColumn fx:id="datecolumn" prefWidth="150.0" text="date" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

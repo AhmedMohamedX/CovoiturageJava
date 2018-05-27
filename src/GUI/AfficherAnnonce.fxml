@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="but" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" style="-fx-background-color: white;" styleClass="mainFxmlClass" stylesheets="@../css/affannonce.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.AfficherAnnonceController">
+   <children>
+      <Label fx:id="title" layoutX="22.0" layoutY="20.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="57.0" prefWidth="1064.0" style="-fx-background-color: #D3D3D3;">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <effect>
+            <ColorAdjust />
+         </effect></Label>
+      <Label alignment="TOP_LEFT" contentDisplay="TOP" layoutX="22.0" layoutY="94.0" prefHeight="37.0" prefWidth="168.0" text="Date départ :" textFill="#3b5998" AnchorPane.bottomAnchor="669.0" AnchorPane.leftAnchor="22.0" AnchorPane.rightAnchor="1090.0" AnchorPane.topAnchor="94.0">
+         <font>
+            <Font size="29.0" />
+         </font></Label>
+      <JFXButton fx:id="delete" layoutX="260.0" layoutY="612.0" onAction="#deleteannonce" text="Delete" />
+      <JFXButton fx:id="update" layoutX="467.0" layoutY="614.0" onAction="#updateannonce" text="Update" />
+      <Label fx:id="dated" layoutX="29.0" layoutY="148.0" prefHeight="35.0" prefWidth="388.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label alignment="TOP_LEFT" contentDisplay="TOP" layoutX="663.0" layoutY="94.0" prefHeight="43.0" prefWidth="322.0" text="Date de publication :" textFill="#3b5998">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+      <Label fx:id="datep" layoutX="666.0" layoutY="146.0" prefHeight="35.0" prefWidth="410.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label alignment="TOP_LEFT" contentDisplay="TOP" layoutX="21.0" layoutY="266.0" prefHeight="43.0" prefWidth="322.0" text="Prix par personne :" textFill="#3b5998">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+      <Label fx:id="prixx" layoutX="25.0" layoutY="327.0" prefHeight="35.0" prefWidth="386.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label alignment="TOP_LEFT" contentDisplay="TOP" layoutX="661.0" layoutY="264.0" prefHeight="43.0" prefWidth="322.0" text="Déviation :" textFill="#3b5998">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+      <Label fx:id="devia" layoutX="661.0" layoutY="319.0" prefHeight="35.0" prefWidth="426.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label alignment="TOP_LEFT" contentDisplay="TOP" layoutX="30.0" layoutY="441.0" prefHeight="43.0" prefWidth="322.0" text="Nombre de places :" textFill="#3b5998">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+      <Label fx:id="nbrplaces" layoutX="33.0" layoutY="495.0" prefHeight="35.0" prefWidth="350.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label alignment="TOP_LEFT" contentDisplay="TOP" layoutX="659.0" layoutY="449.0" prefHeight="43.0" prefWidth="322.0" text="Commentaire :" textFill="#3b5998">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+      <Label fx:id="comm" alignment="TOP_LEFT" layoutX="665.0" layoutY="496.0" prefHeight="93.0" prefWidth="566.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="fb" fitHeight="63.0" fitWidth="75.0" layoutX="675.0" layoutY="599.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../IMG/facebook-icon-5.png" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="676.0" layoutY="663.0" onAction="#partager" style="-fx-background-color: #3B5998;" text="Partager" textFill="WHITE" />
+   </children>
+</AnchorPane>

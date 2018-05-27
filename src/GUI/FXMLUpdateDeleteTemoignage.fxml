@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="248.0" prefWidth="651.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="GUI.FXMLUpdateDeleteTemoignageController">
+   <children>
+      <TableView fx:id="tableview" layoutX="4.0" layoutY="8.0" prefHeight="200.0" prefWidth="354.0">
+        <columns>
+          <TableColumn fx:id="messagecolumn" prefWidth="200.0" text="message" />
+            <TableColumn fx:id="datecolumn" prefWidth="150.0" text="date" />
+        </columns>
+      </TableView>
+      <JFXTextField fx:id="message" layoutX="442.0" layoutY="55.0" maxWidth="209.0" minWidth="209.0" prefHeight="31.0" prefWidth="209.0" />
+      <JFXButton layoutX="472.0" layoutY="140.0" onAction="#update" text="mise a jour" />
+      <JFXButton layoutX="475.0" layoutY="196.0" onAction="#supprimer" text="supprimer" />
+      <Label layoutX="371.0" layoutY="62.0" text="message" />
+      <Label fx:id="idtem" layoutX="379.0" layoutY="192.0" prefHeight="17.0" prefWidth="47.0" />
+   </children>
+</AnchorPane>

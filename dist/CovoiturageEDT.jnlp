@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="CovoiturageEDT.jnlp">
+  <information>
+    <title>CovoiturageEDT</title>
+    <vendor>AH Info</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="CovoiturageEDT.jar" size="821736" download="eager" />
+    <jar href="lib\GMapsFX-2.0.9.jar" size="180671" download="eager" />
+    <jar href="lib\RG84M6R.jar" size="7583355" download="eager" />
+    <jar href="lib\TrayNotification.jar" size="44050" download="eager" />
+    <jar href="lib\controlsfx-8.40.12.jar" size="1069149" download="eager" />
+    <jar href="lib\fontawesomefx-8.1.jar" size="183786" download="eager" />
+    <jar href="lib\geoip-api-1.3.1.jar" size="112398" download="eager" />
+    <jar href="lib\itextpdf-5.5.1.jar" size="2228677" download="eager" />
+    <jar href="lib\java-mail-1.4.4.jar" size="526448" download="eager" />
+    <jar href="lib\jfoenix.jar" size="2413498" download="eager" />
+    <jar href="lib\mysql-connector-java-5.1.23-bin.jar" size="860471" download="eager" />
+    <jar href="lib\pdfbox-app-2.0.5.jar" size="8436312" download="eager" />
+    <jar href="lib\restfb-2.0.0-rc.2.jar" size="1146188" download="eager" />
+  </resources>
+<security>
+  <all-permissions/>
+</security>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="CovoiturageEDT" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="covoiturageedt.CovoiturageEDT"  name="CovoiturageEDT" />
+  <update check="always"/>
+</jnlp>

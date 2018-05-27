@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.AcceuilController">
+   <children>
+      <Pane prefHeight="77.0" prefWidth="1219.0" style="-fx-background-color: black;">
+         <children>
+            <JFXButton layoutX="1063.0" layoutY="27.0" onAction="#logout" text="deconnection" textFill="WHITE" />
+            <Label fx:id="NomUtil" layoutX="853.0" layoutY="31.0" prefHeight="17.0" prefWidth="120.0" textFill="WHITE" />
+            <ImageView fx:id="Photoprofil" fitHeight="60.0" fitWidth="76.0" layoutX="978.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="jet" layoutX="782.0" layoutY="30.0" onMouseClicked="#recharge" prefHeight="17.0" prefWidth="36.0" text="jetons" textFill="WHITE" />
+            <Label fx:id="jetons" layoutX="736.0" layoutY="31.0" prefHeight="17.0" prefWidth="46.0" textFill="#3b5998" />
+            <JFXButton layoutX="14.0" layoutY="16.0" onAction="#modifierprofil" prefHeight="26.0" prefWidth="245.0" style="-fx-background-color: #ebc032;" text="Modifier profil ">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="458.0" layoutY="27.0" onAction="#voitures" text="Mes voitures" textFill="WHITE" />
+            <JFXButton layoutX="550.0" layoutY="27.0" onAction="#reservations" text="Mes réservations" textFill="WHITE" />
+            <JFXButton layoutX="657.0" layoutY="27.0" onAction="#rec" text="Mes reclamations" textFill="WHITE" />
+         </children>
+      </Pane>
+      <ScrollPane fx:id="container" layoutY="77.0" prefHeight="492.0" prefWidth="1219.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0" />
+        </content>
+      </ScrollPane>
+      <ScrollPane fx:id="temoignage" layoutY="568.0" prefHeight="105.0" prefWidth="1219.0" />
+      <JFXComboBox fx:id="dropdown" blendMode="DARKEN" layoutX="293.0" layoutY="38.0" onAction="#handlebutton" prefHeight="35.0" prefWidth="160.0" style="-fx-background-color: black;" />
+      <FontAwesomeIcon fill="#ebc032" iconName="COMMENTS" layoutX="343.0" layoutY="50.0" size="60" text="" />
+      
+   </children>
+</AnchorPane>

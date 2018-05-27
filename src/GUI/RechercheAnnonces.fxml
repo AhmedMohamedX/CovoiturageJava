@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane id="AnchorPane" minWidth="-Infinity" prefHeight="538.0" prefWidth="1200.0" styleClass="mainFxmlClass" stylesheets="@../css/listannonces.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.RechercheAnnoncesController">
+   <children>
+      <HBox layoutX="1084.0" layoutY="14.0" prefHeight="34.0" prefWidth="145.0" />
+      <JFXListView fx:id="list" layoutX="11.0" layoutY="85.0" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#getAnnonce" prefHeight="766.0" prefWidth="1280.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="85.0" />
+   </children>
+</AnchorPane>

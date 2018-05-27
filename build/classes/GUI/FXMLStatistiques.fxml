@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="515.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.FXMLStatistiquesController">
+   <children>
+      <Label fx:id="lb" layoutX="566.0" layoutY="369.0" />
+      <BarChart fx:id="barchart" layoutX="21.0" layoutY="79.0" prefHeight="422.0" prefWidth="500.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis minorTickCount="4" minorTickLength="2.0" side="LEFT" tickLabelGap="0.0" tickUnit="2.0" upperBound="15.0" />
+        </yAxis>
+      </BarChart>
+      <Button fx:id="pdf" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#onload" text="PDFrep" />
+    <!--<Button fx:id="lod" layoutX="51.0" layoutY="13.0" onAction="#loadchart"  mnemonicParsing="false"  prefHeight="40.0" prefWidth="63.0" text="load" />-->
+   </children>
+</AnchorPane>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: WHITE;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.MainFXMLController">
+   <children>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: WHITE;">
+         <center>
+            <AnchorPane fx:id="child" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="500.0" style="-fx-background-color: WHITE;" BorderPane.alignment="CENTER" />
+         </center>
+         <left>
+            <VBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="150.0" style="-fx-background-color: WHITE;" BorderPane.alignment="CENTER">
+               <children>
+                  <JFXHamburger fx:id="ham" alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="34.0" translateX="100.0">
+                     <VBox.margin>
+                        <Insets left="-98.0" />
+                     </VBox.margin>
+                  </JFXHamburger>
+                  <JFXDrawer fx:id="drawer" defaultDrawerSize="300.0" prefHeight="493.0" prefWidth="34.0" />
+               </children>
+            </VBox>
+         </left>
+         <bottom>
+            <Label fx:id="person" text="Person" BorderPane.alignment="TOP_LEFT" />
+         </bottom>
+      </BorderPane>
+   </children>
+</StackPane>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.FXMLBackOfficeController">
+      <children>
+      <Pane prefHeight="77.0" prefWidth="1274.0" style="-fx-background-color: black;">
+         <children>
+            <Label layoutX="14.0" layoutY="3.0" prefHeight="17.0" prefWidth="279.0" text="Administration" textFill="#fcf8f8">
+               <font>
+                  <Font name="Agency FB" size="59.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="1163.0" layoutY="38.0" onAction="#logout" prefHeight="25.0" prefWidth="104.0" text="Deconnection" textFill="#eee9e9" />
+         </children></Pane>
+      <ScrollPane fx:id="container" layoutX="242.0" layoutY="77.0" prefHeight="590.0" prefWidth="1033.0" style="-fx-background-color: black;">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0" />
+        </content>
+      </ScrollPane>
+      <Pane layoutX="-1.0" layoutY="77.0" prefHeight="375.0" prefWidth="243.0">
+         <children>
+            <JFXButton layoutY="239.0" onAction="#loadtem" prefHeight="50.0" prefWidth="243.0" text="voir les temoignages" />
+            <JFXButton layoutX="-1.0" layoutY="281.0" onAction="#statistiques" prefHeight="50.0" prefWidth="243.0" text="Statistiques" />
+            <JFXButton layoutX="87.0" layoutY="211.0" onAction="#annonces" text="Annonces" />
+            <JFXButton layoutX="78.0" layoutY="331.0" onAction="#rec" text="Reclamations" />
+         </children></Pane>
+      <Pane layoutX="1033.0" layoutY="-8.0" prefHeight="675.0" prefWidth="0.0" />
+      
+   </children>
+</AnchorPane>

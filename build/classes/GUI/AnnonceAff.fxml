@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import org.controlsfx.control.Rating?>
+
+<AnchorPane id="AnchorPane" fx:id="but" onMouseMoved="#ref" prefHeight="800.0" prefWidth="1200.0" style="-fx-background-color: white;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.AnnonceAffController">
+   <children>
+      <Label fx:id="title" layoutX="22.0" layoutY="20.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="57.0" prefWidth="1158.0" style="-fx-background-color: #D3D3D3;">
+         <font>
+            <Font size="34.0" />
+         </font>
+         <effect>
+            <ColorAdjust />
+         </effect></Label>
+      <Label fx:id="content" alignment="TOP_LEFT" contentDisplay="TOP" layoutX="27.0" layoutY="94.0" prefHeight="83.0" prefWidth="311.0" AnchorPane.bottomAnchor="623.0" AnchorPane.leftAnchor="27.0" AnchorPane.rightAnchor="862.0" AnchorPane.topAnchor="94.0">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <JFXListView fx:id="LisyReponse" layoutX="181.0" layoutY="550.0" prefHeight="162.0" prefWidth="774.0" AnchorPane.bottomAnchor="88.0" AnchorPane.leftAnchor="181.0" AnchorPane.rightAnchor="245.0" AnchorPane.topAnchor="550.0" />
+      <JFXButton fx:id="AnswerButton" layoutX="122.0" layoutY="505.0" onAction="#AnswerAction" stylesheets="@../css/addcomm.css" text="Envoyer" />
+      <JFXTextArea fx:id="Answer" layoutX="245.0" layoutY="509.0" prefHeight="32.0" prefWidth="707.0" promptText="write your answer here" />
+      <Label fx:id="prixx" layoutX="27.0" layoutY="180.0" prefHeight="70.0" prefWidth="308.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="nbplaces" layoutX="22.0" layoutY="259.0" prefHeight="70.0" prefWidth="308.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="commentaire" layoutX="28.0" layoutY="326.0" prefHeight="137.0" prefWidth="425.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="image" fitHeight="150.0" fitWidth="150.0" layoutX="707.0" layoutY="133.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="name" layoutX="735.0" layoutY="299.0" prefHeight="36.0" prefWidth="150.0" />
+      <Label fx:id="tel" layoutX="739.0" layoutY="334.0" prefHeight="36.0" prefWidth="150.0" />
+      <Rating fx:id="rating" layoutX="691.0" layoutY="383.0" />
+      <JFXButton fx:id="rate" layoutX="724.0" layoutY="427.0" onAction="#RateAction" prefHeight="43.0" prefWidth="113.0" text="Donner avis" />
+      <Label fx:id="numComments" layoutX="120.0" layoutY="475.0" prefHeight="17.0" prefWidth="28.0" textFill="#3b5998">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="148.0" layoutY="475.0" text="Commentaire" textFill="#3b5998">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <JFXButton layoutX="453.0" layoutY="428.0" onAction="#payer" prefHeight="43.0" prefWidth="77.0" style="-fx-background-color: #3b5998;" text="Payer" textFill="WHITE" />
+   </children>
+   <stylesheets>
+      <URL value="@../css/aff.css" />
+      <URL value="@../css/listannonces.css" />
+   </stylesheets>
+</AnchorPane>

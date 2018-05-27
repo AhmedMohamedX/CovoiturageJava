@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.AjoutiniController">
+     <children>
+      <Label layoutX="489.0" layoutY="131.0" text="Marque ">
+         <font>
+            <Font name="Berlin Sans FB" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="491.0" layoutY="187.0" text="Couleur">
+         <font>
+            <Font name="Berlin Sans FB" size="17.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="marque" focusColor="#c3c4c500" layoutX="489.0" layoutY="151.0" prefHeight="25.0" prefWidth="279.0" style="-fx-border-color: #c3c4c5; -fx-border-radius: 3px; -fx-padding: 5px;" unFocusColor="#4d4d4d00">
+         <font>
+            <Font name="Berlin Sans FB" size="12.0" />
+         </font>
+      </JFXTextField>
+      <Label layoutX="491.0" layoutY="241.0" text="Nombre de places">
+         <font>
+            <Font name="Berlin Sans FB" size="17.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="couleur" focusColor="#c3c4c500" layoutX="489.0" layoutY="212.0" prefHeight="25.0" prefWidth="279.0" style="-fx-border-color: #c3c4c5; -fx-border-radius: 3px; -fx-padding: 5px;" unFocusColor="#4d4d4d00">
+         <font>
+            <Font name="Berlin Sans FB" size="12.0" />
+         </font>
+      </JFXTextField>
+      <Rectangle fx:id="pane" arcHeight="5.0" arcWidth="5.0" fill="#117a65" height="49.0" stroke="TRANSPARENT" strokeType="INSIDE" width="1268.0" />
+      <Label layoutX="568.0" layoutY="10.0" text="Ajouter une voiture" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="25.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="ajouter" layoutX="539.0" layoutY="441.0" onAction="#Ajouter" prefHeight="37.0" prefWidth="126.0" style="-fx-background-color: #1b96b1;" text="Ajouter" textFill="#f2f2f2">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </JFXButton>
+      
+      
+     
+      
+      <ComboBox fx:id="nbp" layoutX="489.0" layoutY="261.0" prefHeight="25.0" prefWidth="27.0" />
+      <Label fx:id="alerteM" layoutX="273.0" layoutY="155.0" />
+      <Label fx:id="alerteC" layoutX="273.0" layoutY="242.0" />
+      <Label fx:id="alertN" layoutX="265.0" layoutY="330.0" />
+      <Label fx:id="path" layoutX="24.0" layoutY="339.0" prefHeight="17.0" prefWidth="288.0" />
+      <Label layoutX="490.0" layoutY="286.0" text="Comfort">
+         <font>
+            <Font name="Berlin Sans FB" size="17.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="comfort" layoutX="488.0" layoutY="308.0" prefWidth="150.0" />
+      <JFXButton fx:id="modifier1" layoutX="685.0" layoutY="441.0" onAction="#Retour" prefHeight="37.0" prefWidth="126.0" style="-fx-background-color: #1b96b1;" text="Annuler" textFill="#f2f2f2">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </JFXButton>
+      <Label layoutX="488.0" layoutY="337.0" text="Categorie">
+         <font>
+            <Font name="Berlin Sans FB" size="17.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cat" layoutX="488.0" layoutY="357.0" prefWidth="150.0" />
+      <JFXDatePicker id="date" fx:id="date" defaultColor="#00ff61" layoutX="488.0" layoutY="403.0" promptText="Date de visite" showWeekNumbers="true" />
+     
+      
+   </children>
+</AnchorPane>
